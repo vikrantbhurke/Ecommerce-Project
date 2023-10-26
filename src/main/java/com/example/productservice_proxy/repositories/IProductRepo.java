@@ -9,7 +9,5 @@ import java.util.List;
 
 @Repository
 public interface IProductRepo extends JpaRepository<Product, Long> {
-    List<Product> findAll();
-    Product save(Product product);
     List<Product> findByCategory(Category category);
 }
